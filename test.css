@@ -23,6 +23,7 @@ ul{
 }
 
 ul a{
+	flex: 1;
 	margin-left: 40px;
 	text-decoration: none;
 	color: #5d7e8e;
@@ -38,6 +39,7 @@ a:hover{
 
 ul a:first-child{
 	color: black;
+
 }
 
 .nav{
@@ -47,10 +49,9 @@ ul a:first-child{
 
 .container_nav{
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	flex-wrap: no-wrap;
-	flex: 1;
 	height: 100%;
 	padding: 0 50px;
 }
@@ -59,6 +60,7 @@ ul a:first-child{
 	width: 100%;
 	border: white;
 	background-color: #f5f5f5;
+	flex: 1;
 }
 
 .input:focus{
@@ -70,7 +72,7 @@ ul a:first-child{
 	display: flex;
 	background: #f5f5f5;
 	border-radius: 6px;
-	width: 15rem;
+	width: 20rem;
 	padding: 1px;
 }
 
@@ -88,7 +90,6 @@ ul a:first-child{
 }
 
 .menu i{
-	display: flex;
 	align-items: center;
 }
 
@@ -151,6 +152,7 @@ ul a:first-child{
 .go_premium button{
 	all: unset;
 	display: flex;
+	flex: 1;
 	justify-content: center;
 	align-items: center;
 	height: 33px;
@@ -181,6 +183,7 @@ ul a:first-child{
  .container_header{
 	display: flex;
 	position: absolute;
+	flex: 1;
 	height: 70%;
 	width: 90%;
 }
@@ -237,7 +240,7 @@ p[class*="p"]{
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	
+	margin-bottom: 4rem;
 }
 
 .first-section h2{
@@ -247,7 +250,9 @@ p[class*="p"]{
 .get-start-with{
 	display: flex;
 	flex-direction: row;
+	flex: 1;
 	min-height: 200px;
+	min-width: 150px;
 	margin: 15px 110px;
 	border: 1px solid #D0D0D0;
 	border-radius: 10px;
@@ -257,10 +262,11 @@ p[class*="p"]{
 
 .get-start-with img{
 	border-radius: 10px;
+
 }
 
 .get-start-with .first-content{
-	margin-left: 4rem;
+	margin-right: 3rem;
 
 }
 
@@ -278,6 +284,7 @@ p[class*="p"]{
 
 .first-content{
 	border-bottom: 2px solid rgba(0,0,0,0.2);
+
 }
 
 .first-content p:nth-of-type(3){
@@ -285,6 +292,7 @@ p[class*="p"]{
 	line-height: 1.688em;
 	color: rgba(0, 0, 0, 0.5);
 	padding-bottom: 3%;
+	
 }
 
 
@@ -298,6 +306,7 @@ p[class*="p"]{
 	background-color: black;
 	text-align: center;
 	cursor: pointer;
+	margin-bottom: 2em;
 }
 
 .first-content h1{
@@ -310,5 +319,73 @@ p[class*="p"]{
 }
 
 .img-div img{
-	max-width: 400px;
+	max-width: 80%;
+}
+
+/* Second Section, cards */
+
+.second-section{
+	min-width: 500px;
+
+}
+
+.second-section h2{
+	margin-left: 110px;
+	margin-bottom: 0px;
+}
+
+
+
+.first-card hr{
+	color: rgba(0,0,0,0.2);
+	background-color: rgba(0,0,0,0.2);
+	height: 2px;
+}
+
+.first-card{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 15px 110px;
+	min-height: 300px;
+	padding: 0;
+
+}
+
+.first-card p:nth-of-type(1){
+	font-size: 14px;
+	line-height: 1.063em;
+	margin: 16px 0 7px;
+}
+
+.first-card p:nth-of-type(2){
+	font-size: 18px;
+	line-height: 1.563em;
+	font-weight: bold;
+	overflow: hidden;
+	margin-bottom: 2em;
+}
+
+.first-card div{
+	align-self: center;
+	flex: 1;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius: 7px;
+	cursor: pointer;
+	padding: 20px;
+	height: 250px;
+	max-width: 250px;
+	margin-bottom: 7px;
+	margin-left: 1em;
+}
+
+.first-card div:hover{
+	box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+.first-card div img{
+	max-width: 200px;
+	max-height: 160px;
+	border-bottom: 2;
 }
